@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="Olx.css">
+    <title>Olx</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <img src="olx_logo.png">
+
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text">Select Your Country</p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Canada')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Canada</p>
+                    </li>
+                    <li class="option" onclick="myfunction('India')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>India</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Pakistan')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pakistan</p>
+                    </li>
+                    <li class="option" onclick="myfunction('NewYork')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NewYork</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="searchbox">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+
+            <div class="language">
+                <p id="eng_tag">English</p>
+
+                <ul class="hin_eng">
+                    <li onclick="languageolx('English')" style="cursor: pointer;">English</li>
+                    <li onclick="languageolx('हिंदी')" style="cursor: pointer;">हिंदी</li>
+                </ul>
+            </div>
+
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img_id">
+                    <img src="pic3.jpg">
+                </div>
+
+                <div class="gropdown" id="gropdown_id">
+                    <div class="nameandimg">
+                        <img src="pic3.jpg">
+                        <p>Puja Verma</p>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="selling_page">
+                <button><i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!------------------- ad1 ------------------>
+    <div class="ad_img">
+        <img src="ad1.jpg">
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon"></i>
+    </div>
+
+    <!------------------ product -------------------->
+
+    <div class="product">
+        <div class="First_row">
+            <div class="box">
+                <a href="product_olx.html">
+                <img src="product-1.jpg">
+                <h2>₹3,500</h2>
+                <p>Mi TV Stick</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-2.jpg">
+                <h2>₹500</h2>
+                <p>Remote Game</p>
+                <div class="address_data">
+                    <p>Vijay Nagar, Ghaziabad</p>
+                    <p>Yesterday</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-3.jpg">
+                <h2>₹5,000</h2>
+                <p>Refrigerator</p>
+                <div class="address_data">
+                    <p>Prit Vihar, Delhi</p>
+                    <p>12/1/2023</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-4.jpg">
+                <h2>₹10,00000</h2>
+                <p>Audi A7</p>
+                <div class="address_data">
+                    <p>Botanical Garden, Delhi</p>
+                    <p>Yesterday</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="First_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-5.jpg">
+                <h2>₹1000</h2>
+                <p>Denim Jeans</p>
+                <div class="address_data">
+                    <p>Lal Kuan, Ghaziabad</p>
+                    <p>2/8/2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-6.jpg">
+                <h2>₹500</h2>
+                <p>Carom Board</p>
+                <div class="address_data">
+                    <p>Sec 18, Noida</p>
+                    <p>4/5/2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-7.jpg">
+                <h2>₹2,000</h2>
+                <p>Ear Pods</p>
+                <div class="address_data">
+                    <p>Bago, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-8.jpg">
+                <h2>₹35,000</h2>
+                <p>Camera</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>23/3/2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="First_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-9.jpg">
+                <h2>₹1,500</h2>
+                <p>Leather Jacket</p>
+                <div class="address_data">
+                    <p>Chizarshi, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-10.jpg">
+                <h2>₹5,500</h2>
+                <p>Washing Machine</p>
+                <div class="address_data">
+                    <p>Vijay Nagar, Ghaziabad</p>
+                    <p>Yesterday</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-11.jpg">
+                <h2>₹1,200</h2>
+                <p>Addidas Shoes</p>
+                <div class="address_data">
+                    <p>Sec-4, Greater Noida</p>
+                    <p>25/1/2023</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-12.jpg">
+                <h2>₹3,000</h2>
+                <p>Sofa</p>
+                <div class="address_data">
+                    <p>Bypass, Ghaziabad</p>
+                    <p>4/3/2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="First_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-5.jpg">
+                <h2>₹1000</h2>
+                <p>Denim Jeans</p>
+                <div class="address_data">
+                    <p>Lal Kuan, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-6.jpg">
+                <h2>₹500</h2>
+                <p>Carom Board</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-7.jpg">
+                <h2>₹2,000</h2>
+                <p>Ear Pod</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-8.jpg">
+                <h2>₹34,000</h2>
+                <p>Camera</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- Load More --------------->
+
+    <div class="load_more">
+        <button id="Load_more_id">Load More</button>
+    </div>
+
+    <div class="Load_More_products" id="load_more_products_id">
+        <div class="First_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-1.jpg">
+                <h2>₹3,500</h2>
+                <p>Mi TV Stick</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-2.jpg">
+                <h2>₹500</h2>
+                <p>Remote Game</p>
+                <div class="address_data">
+                    <p>Vijay Nagar, Ghaziabad</p>
+                    <p>Yesterday</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-3.jpg">
+                <h2>₹5,000</h2>
+                <p>Refrigerator</p>
+                <div class="address_data">
+                    <p>Prit Vihar, Delhi</p>
+                    <p>12/1/2023</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-4.jpg">
+                <h2>₹10,00000</h2>
+                <p>Audi A7</p>
+                <div class="address_data">
+                    <p>Botanical Garden, Delhi</p>
+                    <p>Yesterday</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="First_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-5.jpg">
+                <h2>₹1000</h2>
+                <p>Denim Jeans</p>
+                <div class="address_data">
+                    <p>Lal Kuan, Ghaziabad</p>
+                    <p>2/8/2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-6.jpg">
+                <h2>₹500</h2>
+                <p>Carom Board</p>
+                <div class="address_data">
+                    <p>Sec 18, Noida</p>
+                    <p>4/5/2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-7.jpg">
+                <h2>₹2,000</h2>
+                <p>Ear Pods</p>
+                <div class="address_data">
+                    <p>Bago, Ghaziabad</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#"></a>
+                <img src="product-8.jpg">
+                <h2>₹35,000</h2>
+                <p>Camera</p>
+                <div class="address_data">
+                    <p>Pratap Vihar, Ghaziabad</p>
+                    <p>23/3/2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ ad2 ------------------>
+    <div class="ad_img2">
+        <img src="ad2.jpg">
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon2"></i>
+    </div>
+
+    <!-------------- Download app ----------------->
+
+    <div class="download_app">
+        <div class="download">
+            <img src="footar.jpg" class="images">
+
+            <div class="text">
+                <h1>TRY THE OLX APP</h1>
+                <P>Buy, sell and find just about anything using<br>
+                the app on your mobile</P>
+            </div>
+            <div class="download_store">
+                <p>GET YOUR APP TODAY</p>
+                <img src="play store.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!------------------ Footer --------------------->
+    <div class="main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATOIN</h2>
+                <P>kolkata</P>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>Pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>Trending LOCATOIN</h2>
+                <P>Bhubaneshwar</P>
+                <p>Hyderbad</p>
+                <p>Chandigarh</p>
+                <p>Nashit</p>
+            </div>
+            <div class="footer_box">
+                <h2>About US </h2>
+                <P>About OLX Group</P>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>OLXPeople</p>
+            </div>
+            <div class="footer_box">
+                <h2>OLX</h2>
+                <P>Help</P>
+                <p>Legal & Privacy information</p>
+                <p>Blog</p>
+               
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Olx.js"></script>
+
+
+</html>
